@@ -1,26 +1,56 @@
-body{
-    background-color: lightcoral;
+body {
+    background-color: #a9f04b;
 }
-h1{
-    color:lightcoral;
-    background-color: cyan;
+
+h1 {
+    font-family: 'Special Elite', fantasy;
+    color: rgb(38, 0, 255);
+    background-color: cornsilk;
 }
-#show_sketch{
-    float:right;
+
+#sketch_name {
+    color: red;
 }
-canvas{
-    border:5px solid white;
+
+#show_sketch {
+    float: right;
+}
+
+canvas {
+    border: 5px solid white;
     border-radius: 20px;
-    animation-name: sketch;
+    margin-top: 150px;
+    box-shadow: 5px 5px 5px grey;
+    box-shadow: 1px 1px 38px #ffffff;
+    animation-name: example;
     animation-duration: 4s;
-    margin-top: 85px;
     animation-iteration-count: infinite;
 }
-@keyframes sketch{
-    from{box-shadow: 1px 1px 38px blue;}
-    to{box-shadow: 1px 1px 38px red;}
+
+@keyframes example {
+    from {
+        box-shadow: 1px 1px 38px grey;
+    }
+
+    to {
+        box-shadow: 1px 1px 38px white;
+    }
 }
-p{
+
+p,
+span {
     padding-top: 10px;
+    font-family: 'Special Elite', fantasy;
     font-size: 25px;
+}
+
+#score {
+    font-size: 35px;
+    margin-left: 20px;
+}
+
+#time {
+    font-size: 35px;
+    float: right;
+    margin-right: 20px;
 }
